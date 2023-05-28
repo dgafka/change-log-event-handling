@@ -14,7 +14,8 @@
         }
     },
     "require": {
-        "ecotone/lite-application-starter": "^1.0.1"
+        "ecotone/lite-application-starter": "^1.0.1",
+        "dgafka/change-log-cqrs": "~0.4.4"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
@@ -31,11 +32,14 @@
     "extra": {
         "merge-plugin": {
             "include": [
-                "../../config.json"
+                "../local_packages.json"
             ]
         },
         "ecotone": {
             "repository": "change-log-event-handling"
+        },
+        "branch-alias": {
+            "dev-main": "0.4.4-dev"
         }
     }
 }
